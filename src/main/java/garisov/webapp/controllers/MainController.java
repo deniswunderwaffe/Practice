@@ -1,7 +1,6 @@
 package garisov.webapp.controllers;
 
-import garisov.webapp.dao.DAO;
-import org.springframework.beans.factory.annotation.Autowired;
+import garisov.webapp.dao.MedicDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/main")
 public class MainController {
-    final DAO dao;
-    public MainController(DAO dao) {
-        this.dao = dao;
+    final MedicDAO medicDao;
+    public MainController(MedicDAO medicDao) {
+        this.medicDao = medicDao;
     }
 
     @GetMapping()
