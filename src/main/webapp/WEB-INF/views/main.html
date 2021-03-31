@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th ="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Main page</title>
 </head>
 <body>
 <h1>Test main page</h1>
+
+<div th:each = "medic: ${medics}">
+    <a th:href = "@{/main/{id}(id = ${medic.getId()})}"th:text="${medic.getName()}">Medic</a>
+</div>
 </body>
 </html>
