@@ -1,9 +1,20 @@
 package garisov.webapp.clients;
 
+
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
+
 public class Client {
     private int id;
+
+    @NotEmpty(message = "Can not be empty")
+    @Size(min = 2, max = 50,message = "Min = 2 Max = 50 Chars")
     private String name;
+    @NotEmpty(message = "Enter valid phone")
     private String phone;
+    @NotEmpty(message = "Can not be empty")
+    @Email(message = "Enter valid Email")
     private String email;
 
     public Client() {

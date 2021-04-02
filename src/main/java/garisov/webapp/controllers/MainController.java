@@ -7,7 +7,10 @@ import garisov.webapp.medics.Medic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/main")
@@ -37,7 +40,11 @@ public class MainController {
         return "main/new";
     }
     @PostMapping()
-    public String create(@ModelAttribute("client")Client client){
+    public String create(@ModelAttribute("client") @Valid Client client,
+                         BindingResult bindingResult){
+        if(bindingResult.hasErrors())
+            return "main/new";
+
         clientDao.save(client);
         return "redirect:/main";
     }
