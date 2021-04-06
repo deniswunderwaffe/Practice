@@ -57,7 +57,7 @@
 <hr/>
 <hr/>
 <hr/>
-<img src="../../images/473px-Reno_Jackson_full.jpg" class="img-fluid" width="250" style="display: block;
+<img th:src="@{../../images/{id}.jpg(id = ${medic.getId()})}" class="img-fluid" width="250" style="display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;">

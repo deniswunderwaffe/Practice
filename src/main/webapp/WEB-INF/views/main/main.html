@@ -212,7 +212,7 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-4" th:each = "medic: ${medics}">
-                <img class="bd-placeholder-img rounded-circle"  src="../../images/473px-Reno_Jackson_full.jpg">
+                <img class="bd-placeholder-img rounded-circle"  th:src="@{../../images/{id}.jpg(id = ${medic.getId()})}" height="200">
                 <h2>
                 <a class="text-decoration-none"th:href = "@{/main/{id}(id = ${medic.getId()})}" th:text="${medic.getName()}">
                 Heading
