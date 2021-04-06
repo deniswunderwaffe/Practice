@@ -2,18 +2,14 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.82.0">
     <title>Carousel Template · Bootstrap v5.0</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"> 
 
     <style>
         .bd-placeholder-img {
@@ -33,33 +29,38 @@
 
 
     <!-- Custom styles for this template -->
+    <link href="../../../resources/Style.css" rel="stylesheet">
     <link href="../../../resources/carousel.css" rel="stylesheet">
+    
 </head>
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #c5e7ff;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Carousel</a>
+            <a class="navbar-brand text-decoration-none" href="#">
+                <img src="../../images/icon_bar.png" alt="" height="45px">
+                Dental Engineering
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
+                        <a class="nav-link" href="#">Specialists</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Location</a>
+                  </li>  
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-success" type="submit">Get consultation</button>
                 </form>
+                <div class="d-flex" style="margin-left: 10px;">Monday - Sunday<br> 09:00 - 21:00</div>
             </div>
         </div>
     </nav>
@@ -75,35 +76,33 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <img src="../../images/entry.jpg">
 
                 <div class="container">
                     <div class="carousel-caption text-start">
-                        <h1>Example headline.</h1>
-                        <p>Some representative placeholder content for the first slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                        <h1 class="shadow">Easy registration</h1>
+                        <p class="shadow">Just complete an easy form or come to our clinic</p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <img src="../../images/tools.jpg">
 
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        <h1 class="shadow">Best equipment</h1>
+                        <p class="shadow">We use the most modern equipment and technologies</p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <img src="../../images/vra4.jpg">
 
                 <div class="container">
                     <div class="carousel-caption text-end">
-                        <h1>One more for good measure.</h1>
-                        <p>Some representative placeholder content for the third slide of this carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        <h1 class="shadow">Best specialists</h1>
+                        <p class="shadow">Our medics will investigate you and will offer the best possible treatment</p>
+
                     </div>
                 </div>
             </div>
@@ -122,15 +121,100 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
+        
     <div class="container marketing">
+        <div class="container-large"> 
+            <p class="text-center"><img src="../../images/laurel-wreath.png" alt="" width="100px"></p>
+            <p class="text-center lead">
+             Dental Engineering International Hospital Moldova offers you the full spectrum
+                 of highest quality in medical treatment and dental treatment in implant
+                  dentistry and oral surgery as well highest
+                 level reconstructive and cosmetic plastic and aesthetic surgery.</p>
+        </div>
 
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+        <h1 class="text-center" style="margin-bottom: 40px;">Why us?</h1>
+    
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Because <span class="text-muted">We know</span></h2>
+                <p class="lead">
+                    We know that a healthy mouth—especially the teeth, lips and tongue—is essential for speech and affects our ability to taste, chew, and digest foods. We also know that poor oral
+                     health—such as chronic inflammation from gum disease—has been associated with heart disease, blockages, and strokes.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img src="../../images/tooth.jpg" alt="" height="430" width="500">
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Because <span class="text-muted">We care</span></h2>
+                <p class="lead">Research even suggests that a healthy mouth may help prevent 
+                    pre-term births and low birth-weight babies, and help us prevent memory loss in later years of life.
+                    We are committed to helping you maintain your oral health as an integral part of your overall health and wellness.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="../../images/treatment.jpg" alt="" height="410" width="430">
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Because <span class="text-muted">We can</span></h2>
+                <p class="lead">
+                    We provide team-based, comprehensive dental care for children and adults, including patients of all ages who are anxious or have an underlying developmental
+                     or medical condition that may add complexity to the management of their oral health.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img src="../../images/wecan.jpg" alt="" height="410" width="450">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="card-group">
+            <div class="card">
+              
+              <div class="card-body">
+                <h1 class="card-title fw-bold">16</h1>
+                <p class="card-text fs-4">Clinics</p>
+                
+              </div>
+            </div>
+            <div class="card">
+              
+              <div class="card-body">
+                <h1 class="card-title fw-bold">64 000</h1>
+                <p class="card-text fs-4"> Happy patients</p>
+                
+              </div>
+            </div>
+            <div class="card">
+              
+              <div class="card-body">
+                <h1 class="card-title fw-bold">70+</h1>
+                <p class="card-text fs-4">Careful medics</p>
+                
+            </div>
+            </div>
+          </div>
+        <hr class="featurette-divider">
+        <h1 class="text-center">Our specialists</h1>
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-4" th:each = "medic: ${medics}">
                 <img class="bd-placeholder-img rounded-circle"  src="../../images/473px-Reno_Jackson_full.jpg">
                 <h2>
-                <a th:href = "@{/main/{id}(id = ${medic.getId()})}" th:text="${medic.getName()}">
+                <a class="text-decoration-none"th:href = "@{/main/{id}(id = ${medic.getId()})}" th:text="${medic.getName()}">
                 Heading
                 </a>
                 </h2>
@@ -142,64 +226,87 @@
                 <div th:text="${medic.getPost()}">Post</div>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
-
-
-        <!-- START THE FEATURETTES -->
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <hr class="featurette-divider"> 
+        <div class="container-large"> 
+            <p class="text-center"><img src="../../images/stars.png" alt="" width="100px"></p>
+            <h1 class="text-center" style="margin-bottom: 40px;">Feedback</h1>
+            <p class="text-center lead">
+             Some feedback from our patients</p>
+        </div>  
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="height: auto;">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="bd-placeholder-img rounded-circle"  src="../../images/client1.jpg" height="60">
+                      <h1 class="card-title">Costumer1 Costumer1</h1>
+                      <p class="card-text fs-4">Clinics</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item" style="height: auto;">
+                <div class="card">
+                    <div class="card-body">
+                    <img class="bd-placeholder-img rounded-circle"  src="../../images/client2.jpg" height="60">
+                      <h1 class="card-title">Costumer2 Costumer2</h1>
+                      <p class="card-text fs-4">Clinics</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item" style="height: auto;">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="bd-placeholder-img rounded-circle"  src="../../images/client3.jpg" height="60">
+                      <h1 class="card-title">Costumer3 Costumer3</h1>
+                      <p class="card-text fs-4">Clinics</p>
+                    </div>
+                  </div>
+              </div>
             </div>
-            <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Oh yeah, its that good. <span class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-            </div>
-            <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <hr class="featurette-divider"> 
+         
     </div><!-- /.container -->
+    <h1 class="text-center" style="margin-bottom: 40px;">Where to find us</h1>
     <div class="container-fluid">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.8886963125183!2d28.86592611591082!3d47.062033679152336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d202ca02209%3A0x412c20f1e56915e4!2z0KTQsNC60YPQu9GM0YLQtdGCINCS0YvRh9C40YHQu9C40YLQtdC70YzQvdC-0Lkg0KLQtdGF0L3QuNC60LgsINCY0L3RhNC-0YDQvNCw0YLQuNC60Lgg0Lgg0JzQuNC60YDQvtGN0LvQtdC60YLRgNC-0L3QuNC60Lg!5e0!3m2!1sru!2s!4v1617712319380!5m2!1sru!2s"  height="200" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-
-    <!-- FOOTER -->
-    <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>&copy; 2017-2021 Company <a href="#">Privacy</a> <a href="#">Terms</a></p>
-    </footer>
+    <hr class="featurette-divider">
 </main>
+<section class="">
+    <!-- Footer -->
+    <footer class="text-center text-white sticky-bottom" style="background-color: #377bb9;">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">Apply for consultation</span>
+            <button type="button" class="btn btn-outline-light btn-rounded">
+                Apply
+            </button>
+          </p>
+        </section>
+        <!-- Section: CTA -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Dental Engineering® Moldova
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

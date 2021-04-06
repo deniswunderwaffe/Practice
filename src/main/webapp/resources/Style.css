@@ -1,7 +1,9 @@
-img{
-    width: 10px;
+h1{
+    font-family: 'Nunito', sans-serif;
 }
-body{
-    background-color: maroon;
-
+.shadow{
+    text-shadow: 1px 1px 2px #000000;
+}
+.fw-bold{
+    font-family: 'Montserrat', sans-serif;
 }
