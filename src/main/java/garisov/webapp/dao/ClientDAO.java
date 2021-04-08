@@ -23,6 +23,9 @@ public class ClientDAO {
         jdbcTemplate.update("DELETE FROM orders " +
                 "WHERE id=?",id);
     }
+    public List<Client> showClientBase(){
+        return jdbcTemplate.query("SELECT * FROM clients",new ClientMapper());
+    }
     public List<Client> show(){
         return jdbcTemplate.query("SELECT * FROM orders",new ClientMapper());
     }

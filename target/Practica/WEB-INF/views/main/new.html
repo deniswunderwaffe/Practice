@@ -76,19 +76,19 @@
                 <div class="form-floating">
                     <input type="text" class="form-control form-control-lg" th:field = "*{name}" id="name" placeholder="Name">
                     <label for="name">Name</label>
-                    <p th:if="${#fields.hasErrors('name')}" th:errors ="*{name}">error</p>
+                    <p th:if="${#fields.hasErrors('name')}" th:errors ="*{name}" style = "color:red;">error</p>
                     <br>
                 </div>
                 <div class="form-floating">
                     <input type="text" class="form-control form-control-lg" th:field = "*{phone}" id="phone" placeholder="phone">
-                    <label for="phone">phone</label>
-                    <p th:if="${#fields.hasErrors('phone')}" th:errors ="*{phone}">error</p>
+                    <label for="phone">Phone</label>
+                    <p th:if="${#fields.hasErrors('phone')}" th:errors ="*{phone}" style = "color:red;">error</p>
                     <br>
                 </div>
                 <div class="form-floating">
                 <input type="text" class="form-control form-control-lg" th:field = "*{email}" id="email" placeholder="name@example.com" value="example@example.com">
                     <label for="email">Email</label>
-                    <p th:if="${#fields.hasErrors('email')}" th:errors ="*{email}">error</p>
+                    <p th:if="${#fields.hasErrors('email')}" th:errors ="*{email}" style = "color:red;">error</p>
                     <br>
                 </div>
                 <div class="d-grid gap-2">

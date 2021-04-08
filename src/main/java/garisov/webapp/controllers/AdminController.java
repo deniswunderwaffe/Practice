@@ -24,6 +24,8 @@ public class AdminController {
     public String admin_main(Model model)
     {
         model.addAttribute("orders",clientDao.show());
+        model.addAttribute("medics",medicDao.show());
+        model.addAttribute("clientBase",clientDao.showClientBase());
         return "admin/main";
     }
     @DeleteMapping("/{id}")
