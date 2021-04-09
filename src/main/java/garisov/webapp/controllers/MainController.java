@@ -57,7 +57,7 @@ public class MainController {
     public String update(@ModelAttribute("medic")Medic medic,
                          @PathVariable("id")int id){
         medicDao.update(id,medic);
-        return "redirect:/main";
+        return "redirect:/admin";
     }
 
 }
